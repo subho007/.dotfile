@@ -36,6 +36,10 @@ zinit snippet OMZ::plugins/per-directory-history/per-directory-history.zsh
 zinit ice wait"0"
 zinit light zdharma/history-search-multi-word
 
+# Diff
+zinit ice wait"0" as"program" pick"bin/git-dsf"
+zinit light zdharma/zsh-diff-so-fancy
+
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
 zinit $load zsh-users/zsh-autosuggestions
 
