@@ -22,31 +22,28 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
-load=light
-
-zinit $load mafredri/zsh-async
-zinit $load sindresorhus/pure
+zinit light mafredri/zsh-async
 
 # History
 zinit snippet OMZ::lib/history.zsh
-zinit ice wait"0"
+zinit ice silent wait"0"
 zinit snippet OMZ::plugins/history/history.plugin.zsh
-zinit ice wait"0"
+zinit ice silent wait"0"
 zinit snippet OMZ::plugins/per-directory-history/per-directory-history.zsh
-zinit ice wait"0"
+zinit ice silent wait"0"
 zinit light zdharma/history-search-multi-word
 
 # Diff
-zinit ice wait"0" as"program" pick"bin/git-dsf"
+zinit ice silent wait"0" as"program" pick"bin/git-dsf"
 zinit light zdharma/zsh-diff-so-fancy
 
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
-zinit $load zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-autosuggestions
 
-zinit ice blockf; zinit $load zsh-users/zsh-completions
+zinit ice blockf; zinit light zsh-users/zsh-completions
 
-zinit ice silent wait!1 atload"ZINIT[COMPINIT_OPTS]=-C; zpcompinit"
-zinit $load zdharma/fast-syntax-highlighting
+zinit ice silent wait"0" atinit"zpcompinit; zpcdreplay"
+zinit light zdharma/fast-syntax-highlighting
 
 ####  zinit loaded plugin finished ####
 
@@ -69,3 +66,5 @@ source "${HOME}/.dotfile/zsh-custom/alias.zsh"
 
 # Load local functions and custom configs with secrets
 source "${HOME}/.localconf.zsh"
+
+source <("/usr/local/bin/starship" init zsh --print-full-init)
