@@ -32,8 +32,6 @@ zinit $load zsh-users/zsh-autosuggestions
 
 zinit ice blockf; zinit $load zsh-users/zsh-completions
 
-zinit ice silent wait:1; zinit $load zpm-zsh/ls
-
 zinit ice silent wait!1 atload"ZINIT[COMPINIT_OPTS]=-C; zpcompinit"
 zinit $load zdharma/fast-syntax-highlighting
 
