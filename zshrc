@@ -22,18 +22,7 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-
-  autoload -Uz compinit
-  compinit
-fi
-
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
 load=light
-
 
 zinit $load mafredri/zsh-async
 zinit $load sindresorhus/pure
@@ -47,26 +36,25 @@ zinit ice silent wait:1; zinit $load zpm-zsh/ls
 
 zinit ice silent wait!1 atload"ZINIT[COMPINIT_OPTS]=-C; zpcompinit"
 zinit $load zdharma/fast-syntax-highlighting
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
-[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+####  zinit loaded plugin finished ####
 
-alias git=hub
-alias g=git
-
-export GPG_TTY=$(tty)
-
-export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
-export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
-export GUILE_SYSTEM_EXTENSIONS_PATH="/usr/local/lib/guile/3.0/extensions"
+# iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export THEOS=~/theos
+# Make sure usr bin then brew modules loads first
+export PATH="${HOME}/bin:/usr/local/sbin:$PATH"
 
-export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+# Make sure GPG TTY uses the TTY :D
+export GPG_TTY=$(tty)
 
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-export PATH="/usr/local/opt/m4/bin:$PATH"
+# Load brew specific zsh conf
+source "${HOME}/.dotfile/zsh-custom/brewconfpath.zsh"
+
+# Load custom aliases
+source "${HOME}/.dotfile/zsh-custom/alias.zsh"
+
+# Load custom functions
+
+# Load local functions and custom configs with secrets
+source "${HOME}/.localconf.zsh"

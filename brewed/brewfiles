@@ -1,0 +1,11 @@
+--cask docker
+--cask wireshark
+ctop
+zzz
+s-search
+jnettop
+nmap
+pango
+hexedit
+macvim
+neovim
