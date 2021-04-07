@@ -47,6 +47,10 @@ zinit light zdharma/fast-syntax-highlighting
 
 ####  zinit loaded plugin finished ####
 
+## Zinit snippets
+zinit is-snippet for OMZ::plugins/iterm2/iterm2.plugin.zsh
+zinit is-snippet for OMZ::plugins/extract/extract.plugin.zsh
+
 # iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
