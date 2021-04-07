@@ -24,6 +24,8 @@ zinit light-mode for \
 
 zinit light mafredri/zsh-async
 
+zinit load iam4x/zsh-iterm-touchbar
+
 # History
 zinit snippet OMZ::lib/history.zsh
 zinit ice silent wait"0"

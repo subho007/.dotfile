@@ -1,0 +1,88 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary files #
+###################
+*.swp
+*.swo
+*~
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Exclude user-specific XCode 3 and 4 files #
+#############################################
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# Exclude IDE config dirs #
+###########################
+.idea/
+.vscode/
+.projectile
+
+# Generated files #
+###################
+VersionX-revision.h
+
+# Other source repository archive directories (protects when importing) #
+#########################################################################
+.hg
+.svn
+CVS
+
+# TagHighlight tags #
+#####################
+types_*.taghl
+
+
+# automatic backup files #
+##########################
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+
+# Python Related Packages #
+###########################
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.ccls-cache/
