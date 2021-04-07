@@ -10,3 +10,4 @@ source "$HOME/.cargo/env"
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+export STARSHIP_CONFIG="$HOME/.dotfile/starship.toml"
