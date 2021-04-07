@@ -53,6 +53,9 @@ zinit light zdharma/fast-syntax-highlighting
 zinit is-snippet for OMZ::plugins/iterm2/iterm2.plugin.zsh
 zinit is-snippet for OMZ::plugins/extract/extract.plugin.zsh
 
+export AUTOSWITCH_DEFAULT_PYTHON="/usr/bin/python3"
+zinit load MichaelAquilina/zsh-autoswitch-virtualenv
+
 # iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
