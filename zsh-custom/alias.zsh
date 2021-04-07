@@ -11,7 +11,7 @@ alias wget="wget -c"
 alias cd="z"
 
 # macOS aliasses
-alias flush='dscacheutil -flushcache'
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 # Apps
 alias browse="open -a /Applications/Google\ Chrome.app"
 
@@ -33,3 +33,13 @@ alias home='cd ~'
 alias e=$EDITOR
 
 alias cat="bat"
+
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume 7'"
