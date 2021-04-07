@@ -8,3 +8,28 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 # I can always delete the incomplete fragment explicitly. I usually just
 # want to complete it.
 alias wget="wget -c"
+alias cd="z"
+
+# macOS aliasses
+alias flush='dscacheutil -flushcache'
+# Apps
+alias browse="open -a /Applications/Google\ Chrome.app"
+
+# Alias ls commands
+alias ll='ls -alFG'
+alias la='ls -AG'
+alias l='ls -CFG'
+alias lsR='ls -lhRG'
+
+# A quick way to get out of current directory
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
+
+alias home='cd ~'
+
+alias e=$EDITOR
+
+alias cat="bat"

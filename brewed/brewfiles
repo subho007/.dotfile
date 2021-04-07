@@ -12,3 +12,6 @@ neovim
 starship
 p7zip
 rar
+starship
+fzf
+bat

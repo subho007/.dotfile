@@ -44,6 +44,12 @@ if [[ -d "/usr/local/opt/texinfo/bin" ]]; then
     export PATH="/usr/local/opt/texinfo/bin:$PATH"
 fi
 
+if [[ -f "/usr/local/bin/zoxide" ]]; then
+    eval "$(zoxide init zsh)"
+fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 #  Template below
 # if [[ -d "<path to directory>" ]]; then
 

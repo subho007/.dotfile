@@ -54,12 +54,6 @@ zinit is-snippet for OMZ::plugins/extract/extract.plugin.zsh
 # iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Make sure usr bin then brew modules loads first
-export PATH="${HOME}/bin:/usr/local/sbin:$PATH"
-
-# Make sure GPG TTY uses the TTY :D
-export GPG_TTY=$(tty)
-
 # Load brew specific zsh conf
 source "${HOME}/.dotfile/zsh-custom/brewconfpath.zsh"
 
