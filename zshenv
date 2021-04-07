@@ -4,7 +4,7 @@ export GPG_TTY=$(tty)
 # Make sure usr bin then brew modules loads first
 export PATH="${HOME}/bin:/usr/local/sbin:$PATH"
 
-export EDITOR="mvim -f"
+export EDITOR="vim"
 
 source "$HOME/.cargo/env"
 
