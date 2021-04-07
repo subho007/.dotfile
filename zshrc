@@ -61,6 +61,7 @@ source "${HOME}/.dotfile/zsh-custom/brewconfpath.zsh"
 source "${HOME}/.dotfile/zsh-custom/alias.zsh"
 
 # Load custom functions
+source "${HOME}/.dotfile/zsh-custom/functions.zsh"
 
 # Load local functions and custom configs with secrets
 source "${HOME}/.localconf.zsh"

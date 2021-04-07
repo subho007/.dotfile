@@ -21,3 +21,15 @@ function search {
         --color "$*" .
 }
 
+function baseinstall {
+    export HOMEBREW_BUNDLE_FILE="${HOME}/.dotfile/Brewfile"
+    export HOMEBREW_BUNDLE_NO_LOCK=1
+    which -s brew
+    if [[ $? != 0 ]] ; then
+        # Install Homebrew
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    else
+        brew update
+    fi
+    brew bundle --no-lock
+}
