@@ -86,3 +86,6 @@ __pycache__/
 *$py.class
 .mypy_cache/
 .ccls-cache/
+
+# Virtual Envs
+.venv
