@@ -50,7 +50,8 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(fnm env)"
+[[ /usr/local/bin/fnm ]] && eval "$(fnm env)"
+[[ /usr/local/bin/fnm ]] && source "${HOME}/.dotfile/zsh-custom/fnmcompletion.zsh"
 
 #  Template below
 # if [[ -d "<path to directory>" ]]; then
