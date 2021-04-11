@@ -50,6 +50,8 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+eval "$(fnm env)"
+
 #  Template below
 # if [[ -d "<path to directory>" ]]; then
 
