@@ -44,6 +44,10 @@ if [[ -d "/usr/local/opt/texinfo/bin" ]]; then
     export PATH="/usr/local/opt/texinfo/bin:$PATH"
 fi
 
+if [[ -d "/usr/local/opt/bzip2/bin" ]]; then
+    export PATH="/usr/local/opt/bzip2/bin:$PATH"
+fi
+
 if [[ -f "/usr/local/bin/zoxide" ]]; then
     eval "$(zoxide init zsh)"
 fi
@@ -52,7 +56,13 @@ fi
 
 [[ /usr/local/bin/fnm ]] && eval "$(fnm env)"
 
+[[ /usr/local/bin/pyenv ]] && eval "$(pyenv init -)"
+
 #  Template below
 # if [[ -d "<path to directory>" ]]; then
 
 # fi
+
+
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
