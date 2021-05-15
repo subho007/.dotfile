@@ -9,9 +9,11 @@ export EDITOR="vim"
 source "$HOME/.cargo/env"
 
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export LSCOLORS=ExFxCxDxBxegedabagacad
 export STARSHIP_CONFIG="$HOME/.dotfile/starship.toml"
 
 if [[ -s "$HOME/.pythonrc" ]]; then
   export PYTHONSTARTUP="$HOME/.pythonrc"
 fi
+
+export GREP_OPTIONS='--color=always'
