@@ -45,3 +45,6 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 
 alias reload="exec zsh"
+
+alias androidndk-reinstall=androidndk-install
+alias androidsdk-reinstall=androidsdk-install
