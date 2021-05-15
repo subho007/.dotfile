@@ -73,3 +73,10 @@ function androidndk-install {
         print "Set ANDROID_NDK_HOME envoronment variable first"
     fi
 }
+
+jdk() {
+      version=$1
+      unset JAVA_HOME;
+      export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+      java -version
+}
