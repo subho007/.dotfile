@@ -58,6 +58,11 @@ fi
 
 [[ /usr/local/bin/pyenv ]] && eval "$(pyenv init -)"
 
+if [[ -f "/usr/local/bin/go" ]]; then
+    export PATH=$PATH:$(go env GOPATH)/bin
+    export GOPATH=$(go env GOPATH)
+fi
+
 #  Template below
 # if [[ -d "<path to directory>" ]]; then
 
