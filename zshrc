@@ -59,6 +59,14 @@ zinit is-snippet for OMZ::plugins/extract/extract.plugin.zsh
 export AUTOSWITCH_DEFAULT_PYTHON="/usr/bin/python3"
 zinit load MichaelAquilina/zsh-autoswitch-virtualenv
 
+# ZSH native config
+
+# Menu based completion
+zstyle ':completion:*' menu select
+
+# Use mouse scroll as pager
+export LESS=-FR
+
 # iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
