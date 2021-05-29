@@ -49,7 +49,7 @@ if [[ -d "/usr/local/opt/bzip2/bin" ]]; then
 fi
 
 if [[ -f "/usr/local/bin/zoxide" ]]; then
-    eval "$(zoxide init zsh)"
+    eval "$(zoxide init zsh --cmd cd)"
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
