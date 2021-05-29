@@ -32,9 +32,10 @@ alias home='cd ~'
 
 alias e=$EDITOR
 
-alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 # use default mouse scroll as pager
 export BAT_PAGER="less -RF"
+export BAT_THEME="dracula"
+alias cat="bat"
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
