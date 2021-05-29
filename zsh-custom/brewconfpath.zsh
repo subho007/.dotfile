@@ -56,7 +56,14 @@ fi
 
 [[ /usr/local/bin/fnm ]] && eval "$(fnm env)"
 
-[[ /usr/local/bin/pyenv ]] && eval "$(pyenv init -)"
+if [[ /usr/local/bin/pyenv ]]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    # load the pyenv to PATH
+    eval "$(pyenv init --path)"
+    # initialize pyenv
+    eval "$(pyenv init -)"
+fi
 
 if [[ -f "/usr/local/bin/go" ]]; then
     export PATH=$PATH:$(go env GOPATH)/bin
