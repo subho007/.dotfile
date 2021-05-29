@@ -8,7 +8,6 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 # I can always delete the incomplete fragment explicitly. I usually just
 # want to complete it.
 alias wget="wget -c"
-alias cd="z"
 
 # macOS aliasses
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
