@@ -27,8 +27,6 @@ zinit light-mode for \
 
 zinit light mafredri/zsh-async
 
-zinit load iam4x/zsh-iterm-touchbar
-
 # History
 zinit snippet OMZ::lib/history.zsh
 zinit ice silent wait"0"
@@ -37,10 +35,6 @@ zinit ice silent wait"0"
 zinit snippet OMZ::plugins/per-directory-history/per-directory-history.zsh
 zinit ice silent wait"0"
 zinit light zdharma/history-search-multi-word
-
-# Diff
-zinit ice silent wait"0" as"program" pick"bin/git-dsf"
-zinit light zdharma/zsh-diff-so-fancy
 
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
 zinit light zsh-users/zsh-autosuggestions
