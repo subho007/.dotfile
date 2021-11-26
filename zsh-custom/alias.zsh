@@ -33,7 +33,7 @@ alias e=$EDITOR
 
 # use default mouse scroll as pager
 export BAT_PAGER="less -RF"
-export BAT_THEME="dracula"
+export BAT_THEME="Dracula"
 alias cat="bat"
 
 # Empty the Trash on all mounted volumes and the main HDD

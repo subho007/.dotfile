@@ -2,6 +2,8 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 
+source <("/usr/local/bin/starship" init zsh --print-full-init)
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
@@ -75,5 +77,3 @@ source "${HOME}/.dotfile/zsh-custom/functions.zsh"
 
 # Load local functions and custom configs with secrets
 source "${HOME}/.localconf.zsh"
-
-source <("/usr/local/bin/starship" init zsh --print-full-init)
