@@ -75,9 +75,14 @@ function androidndk-install {
 }
 
 jdk() {
-      version=$1
-      unset JAVA_HOME;
-      export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
-      export PATH=$JAVA_HOME/bin:$PATH
-      java -version
+    if [ -z "$1" ]
+        then
+            /usr/libexec/java_home -V
+    else
+        version=$1
+        unset JAVA_HOME;
+        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+        export PATH=$JAVA_HOME/bin:$PATH
+        java -version
+    fi
 }
