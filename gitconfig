@@ -139,3 +139,5 @@
 	defaultBranch = main
 [url "https://github.com/"]
 	insteadOf = git://github.com/
+[fetch]
+	prune = true

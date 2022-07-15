@@ -4,6 +4,11 @@ export GPG_TTY=$(tty)
 # Make sure usr bin then brew modules loads first
 export PATH="${HOME}/bin:/usr/local/sbin:$PATH"
 
+# Load python from homebrew
+if [[ -d "/usr/local/opt/python/libexec/bin" ]]; then
+    export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+fi
+
 export EDITOR="vim"
 
 source "$HOME/.cargo/env"
