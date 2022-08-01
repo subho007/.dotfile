@@ -70,6 +70,10 @@ if [[ -f "/usr/local/bin/go" ]]; then
     export GOPATH=$(go env GOPATH)
 fi
 
+if [[ -f "/usr/local/opt/postgresql@13/bin/psql" ]]; then
+    export PATH="/usr/local/opt/postgresql@13/bin:$PATH"
+fi
+
 #  Template below
 # if [[ -d "<path to directory>" ]]; then
 
