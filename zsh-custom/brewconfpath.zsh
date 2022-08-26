@@ -12,6 +12,7 @@ fi
 if [[ -d "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/" ]]; then
     source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
     source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+    export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 fi
 
 if [[ -d "/usr/local/opt/make/libexec" ]]; then
