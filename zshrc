@@ -77,3 +77,6 @@ source "${HOME}/.dotfile/zsh-custom/functions.zsh"
 
 # Load local functions and custom configs with secrets
 source "${HOME}/.localconf.zsh"
+
+# Created by `pipx` on 2023-01-08 16:08:10
+export PATH="$PATH:/Users/subho/.local/bin"
