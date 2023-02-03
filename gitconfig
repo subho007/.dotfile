@@ -54,6 +54,7 @@
     b = branch
 
     head = reset --hard HEAD
+	ff = merge --ff-only @{upstream}
 
 [apply]
     # Detect whitespace errors when applying a patch
