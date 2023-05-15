@@ -1,4 +1,3 @@
-tap "caskroom/cask"
 tap "cloudflare/cloudflare"
 tap "derailed/k9s"
 tap "earthly/earthly"

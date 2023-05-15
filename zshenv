@@ -11,8 +11,6 @@ fi
 
 export EDITOR="vim"
 
-source "$HOME/.cargo/env"
-
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export STARSHIP_CONFIG="$HOME/.dotfile/starship.toml"
