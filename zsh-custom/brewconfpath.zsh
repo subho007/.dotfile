@@ -72,6 +72,11 @@ if [[ -f "/usr/local/opt/postgresql@13/bin/psql" ]]; then
     export PATH="/usr/local/opt/postgresql@13/bin:$PATH"
 fi
 
+if [[ -d "/usr/local/share/android-ndk" ]]; then
+    export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
+    export ANDROID_NDK_ROOT=$ANDROID_NDK_HOME
+fi
+
 #  Template below
 # if [[ -d "<path to directory>" ]]; then
 
