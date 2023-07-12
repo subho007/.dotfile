@@ -52,7 +52,7 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit is-snippet for OMZ::plugins/iterm2/iterm2.plugin.zsh
 zinit is-snippet for OMZ::plugins/extract/extract.plugin.zsh
 
-export AUTOSWITCH_DEFAULT_PYTHON="/usr/bin/python3"
+export AUTOSWITCH_DEFAULT_PYTHON="$(which python3)"
 zinit load MichaelAquilina/zsh-autoswitch-virtualenv
 
 # ZSH native config
@@ -80,3 +80,5 @@ source "${HOME}/.localconf.zsh"
 
 # Created by `pipx` on 2023-01-08 16:08:10
 export PATH="$PATH:/Users/subho/.local/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

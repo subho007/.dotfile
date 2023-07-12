@@ -23,3 +23,6 @@ style = "bold yellow"
 
 [gcloud]
 disabled = true
+
+[python]
+pyenv_version_name = true

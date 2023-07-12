@@ -49,10 +49,6 @@ if [[ -d "/usr/local/opt/bzip2/bin" ]]; then
     export PATH="/usr/local/opt/bzip2/bin:$PATH"
 fi
 
-if [[ -f "/usr/local/bin/zoxide" ]]; then
-    eval "$(zoxide init zsh --cmd cd)"
-fi
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [[ /usr/local/bin/fnm ]] && eval "$(fnm env)"
@@ -64,6 +60,7 @@ if [[ /usr/local/bin/pyenv ]]; then
     eval "$(pyenv init --path)"
     # initialize pyenv
     eval "$(pyenv init -)"
+    export AUTOSWITCH_DEFAULT_PYTHON="$(which python3)"
 fi
 
 if [[ -f "/usr/local/bin/go" ]]; then
@@ -83,3 +80,8 @@ fi
 
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+
+if [[ -f "/usr/local/bin/zoxide" ]]; then
+    autoload -Uz compinit
+    eval "$(zoxide init zsh)"
+fi
