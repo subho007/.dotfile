@@ -20,3 +20,5 @@ if [[ -s "$HOME/.pythonrc" ]]; then
 fi
 
 export GREP_OPTIONS='--color=always'
+
+export _ZO_ECHO=1export THEOS=~/theos
