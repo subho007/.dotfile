@@ -88,7 +88,7 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 
 if [[ -f "/usr/local/bin/zoxide" ]]; then
     autoload -Uz compinit
-    eval "$(zoxide init zsh --cmd cd)"
+    eval "$(zoxide init zsh --no-cmd --cmd cd)"
 fi
 
 export DOTNET_ROOT="/usr/local/opt/dotnet/libexec"
