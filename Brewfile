@@ -15,7 +15,6 @@ tap "kubescape/tap"
 tap "majd/repo"
 tap "minio/stable"
 tap "safedep/tap"
-tap "subho/local"
 tap "weaveworks/tap"
 brew "aalib"
 brew "act", args: ["HEAD"]
@@ -128,7 +127,6 @@ brew "jadx"
 brew "jnettop"
 brew "jq"
 brew "jsoncpp"
-brew "jsonschema"
 brew "keyring", link: false
 brew "kubernetes-cli", link: false
 brew "kops"
@@ -185,7 +183,6 @@ brew "pyenv"
 brew "python@3.9"
 brew "python-tk@3.9"
 brew "python@3.10"
-brew "python@3.8"
 brew "quickjs"
 brew "rabbitmq", restart_service: true
 brew "re2"
@@ -226,11 +223,9 @@ brew "safedep/tap/vet"
 brew "subho/local/libxmlsec1@1.2.37"
 brew "weaveworks/tap/eksctl"
 cask "adobe-acrobat-reader"
-cask "adoptopenjdk"
 cask "alt-tab"
 cask "android-ndk"
 cask "android-platform-tools"
-cask "android-sdk"
 cask "android-studio"
 cask "anydesk"
 cask "apparency"
@@ -292,11 +287,9 @@ cask "wine-stable"
 cask "wireshark"
 cask "xquartz"
 cask "zoom"
-mas "Authy Bluetooth", id: 668841348
 mas "CopyClip", id: 595191960
 mas "DaisyDisk", id: 411643860
 mas "Fastest VPN", id: 1480208488
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Memory Diag", id: 748212890
 mas "Microsoft Excel", id: 462058435
