@@ -2,7 +2,8 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 
-source <("/usr/local/bin/starship" init zsh --print-full-init)
+starship_path=$(command -v starship)
+source <("$starship_path" init zsh --print-full-init)
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then

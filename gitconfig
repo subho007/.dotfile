@@ -101,7 +101,7 @@
 
 # URL shorthands
 [url "git@github.com:"]
-    insteadOf = https://github.com/
+	insteadOf = https://github.com/
     pushInsteadOf = "github:"
     pushInsteadOf = "git://github.com/"
 
@@ -142,3 +142,5 @@
 	insteadOf = git://github.com/
 [fetch]
 	prune = true
+[hub]
+	protocol = ssh
