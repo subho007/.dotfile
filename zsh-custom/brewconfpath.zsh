@@ -78,7 +78,8 @@ fi
 
 if [[ -f "/usr/local/bin/zoxide" ]] || [[ -f "/opt/homebrew/bin/zoxide" ]] then
     autoload -Uz compinit
-    eval "$(zoxide init zsh --no-cmd --cmd cd)"
+    eval "$(zoxide init zsh --cmd cd)"
+    export _ZO_ECHO=1
 fi
 
 export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"

@@ -83,3 +83,5 @@ source "${HOME}/.localconf.zsh"
 export PATH="$PATH:/Users/subho/.local/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+zinit light Aloxaf/fzf-tab
