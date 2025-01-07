@@ -35,9 +35,8 @@ zinit snippet OMZ::lib/history.zsh
 zinit ice silent wait"0"
 zinit snippet OMZ::plugins/history/history.plugin.zsh
 zinit ice silent wait"0"
-zinit snippet OMZ::plugins/per-directory-history/per-directory-history.zsh
-zinit ice silent wait"0"
 zinit light zdharma-continuum/history-search-multi-word
+zinit light-mode wait lucid for OMZ::plugins/autojump/autojump.plugin.zsh
 
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
 zinit light zsh-users/zsh-autosuggestions
@@ -46,6 +45,7 @@ zinit ice blockf; zinit light zsh-users/zsh-completions
 
 zinit ice silent wait"0" atinit"zpcompinit; zpcdreplay"
 zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light MichaelAquilina/zsh-you-should-use
 
 ####  zinit loaded plugin finished ####
 
